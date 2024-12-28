@@ -1,0 +1,204 @@
+# 22 comandos Git que te ajudarão a programar
+
+O Git é a escolha padrão como sistema de controle de versão por profissionais da área de tecnologia em todo o mundo. Por isso, é importante aprender sobre os **comandos Git** e os comandos Git Bash (ferramenta para a utilização do Git em sistemas Windows).
+
+Continue a leitura, pois trouxemos uma lista com vários deles para que você entenda o que é e como utilizá-los. Além disso, explicaremos o que são essas instruções e qual é a sua utilidade.
+
+## Lista de comandos Git
+
+Ao aprender os principais comandos de Git, você terá diversos benefícios, como:
+
+- - Controle completo de todas as versões do código;
+  - Facilidade com o trabalho em equipe em códigos com múltiplas pessoas desenvolvedoras;
+  - Mais facilidade na resolução de conflitos.
+
+Veja, a seguir, quais são os principais deles, para que cada um serve e como utilizá-los.
+
+### 1. Git add
+
+O comando “git add” é um dos comandos Git para **subir projetos ao índice** (também conhecido como área de staging). Esse é o primeiro passo no processo de gravação de alterações em um repositório do Git.
+
+Quando você faz alterações em seus arquivos, elas não são incluídas automaticamente no próximo commit. Você precisará fazer esse processo manualmente por meio do uso dessa instrução na área de staging.
+
+Você pode utilizar o comando de três formas:
+
+- - **“git add nome_do_arquivo”**, para o seu uso habitual;
+  - **“git add .”**, para adicionar todos os arquivos alterados;
+  - **“git add** **meu_diretorio****“**, para adicionar um diretório específico.
+
+### 2. Git commit
+
+Já o comando “git commit” **salva as mudanças na linha do tempo do repositório**. Um commit é como um ponto de verificação (ou uma nova versão) do seu projeto que você pode reverter, se necessário. Cada registro precisa ter uma mensagem descritiva que explique o que foi alterado.
+
+- - Para comitar um arquivo, use **“git commit meu_arquivo.txt”**;
+  - Para comitar vários arquivos, use o comando **“git commit meu_arquivo.txt meu_outro_arquivo.txt”**;
+  - Já para comitar vários arquivos, a instrução deve ser **“git commit meu_arquivo.txt meu_outro_arquivo.txt”**;
+  - Já para comitar com uma mensagem, você pode utilizar o comando **“git commit** **meuarquivo.txt** **-m “minha mensagem de** **commit””**.
+
+### 3. Git init
+
+**Inicia um novo repositório Git em um diretório existente.** Ao ativar o comando, ele criará uma subpasta chamada “.git”, que contém todos os arquivos necessários para rastrear o histórico das alterações.
+
+Utilize-o ao digitar **“git init”**.
+
+![exemplo git init](https://www.locaweb.com.br/ajuda/wp-content/uploads/2024/10/git-init.webp)
+
+### 4. Git checkout
+
+O comando “git checkout” permite que você **mude de uma** **branch** **para outra ou restaure arquivos para uma versão específica do commit**. Você também pode utilizar essa instrução para navegar por diferentes versões de um mesmo código.
+
+Você pode utilizar o comando de duas formas:
+
+- - Para mudar o branch, utilize **“git checkout nome_da_branch”**;
+  - Já para restaurar um arquivo, a instrução é **“git checkout** **commit_id** **—** **nome_do_arquivo****“**.
+
+### 5. Git push
+
+É usado para **enviar as alterações locais para um repositório remoto**, como em um [servidor cloud](https://www.locaweb.com.br/cloud/cloud-server-pro/) ou em um [servidor VPS](https://www.locaweb.com.br/servidor-vps-b/?source_referer=organic).
+
+Ele atua de maneira oposta ao “[git pull](https://www.locaweb.com.br/ajuda/?lp404=www.locaweb.com.br/ajuda/wiki/git-pull-rebase)” (que falaremos a seguir), que busca integrar mudanças do banco de dados remoto para o seu repositório local.
+
+- - Para utilizá-lo, digite **“git push origin nome_da_branch”**;
+  - Para os demais pushes, você não precisa digitar o nome do repositório. Utilize apenas **“git push”**.
+
+### 6. Git pull
+
+Já demos um spoiler no tópico anterior, mas esse comando **realiza a sincronização do seu repositório local como banco de dados remoto**. Ele faz um fetch (ou seja, baixa conteúdos de um repositório remoto) das mudanças no modelo remoto e as integram no código local.
+
+Use a instrução por meio de **“git pull origin nome_da_branch”**.
+
+### 7. Git clone
+
+O comando “git clone” **cria uma cópia de um repositório remoto em sua máquina local**. Você pode utilizar essa instrução quando quiser começar a trabalhar em um processo existente que está fora do seu computador.
+
+Para usá-lo, escreva **“git clone** **URL_do_repositorio****”**.
+
+Muitos iniciantes na programação utilizam esse comando para clonar um código de um repositório para que a sua máquina trabalhe “em cima dele”, sem a necessidade de criar um código do zero.
+
+Existem diversas aplicações na internet open-source que podem ser clonadas e modificadas.
+
+![exemplo git clone](https://www.locaweb.com.br/ajuda/wp-content/uploads/2024/10/git-clone.webp)
+
+### 8. Git status
+
+**Fornece informações sobre o estado atual do seu repositório.** Ele mostra quais arquivos foram modificados, quais estão no estágio de staging e quais não foram rastreados pelo Git.
+
+Seu uso básico se dá por **“git status”**.
+
+### 9. Git merge
+
+Esse comando é usado para **combinar as mudanças de diferentes branches**. Quando você tem uma ramificação de desenvolvimento e uma principal, por exemplo, você pode utilizar a instrução para unir as alterações feitas na ramificada com a principal.
+
+Digite **“git merge** **nome_da_branch****”** para utilizá-lo.
+
+### 10. Git config
+
+Você pode utilizar esse comando para **configurar as opções do Git**, como o nome de usuário e o e-mail que serão utilizados nos commits.
+
+É possível utilizar a instrução de diversas formas:
+
+- - Para configurar o nome de usuário, utilize **“git config –global user.name “Seu Nome””**;
+  - Para configurar o e-mail, você pode utilizar **“git config –global user.email “****seuemail@email.com****“”**;
+  - Para configurar editor, digite **“git config –global core.editor vim”**;
+  - Para configurar uma ferramenta de merge, o comando é **“git config –global merge.tool vimdiff”**;
+  - Se quiser configurar arquivos a serem ignorados, utilize **“git config –global core.excludesfile ~/.gitignore”**;
+  - E, por fim, você pode utilizar o **“git config –list”** para listar todas as configurações.
+
+### 11. Git rm
+
+O comando “git rm” **remove arquivos do diretório de trabalho e do índice (staging)**. Dessa forma, o arquivo ficará marcado para ser excluído no próximo commit.
+
+Para usá-lo, digite **“git rm nome_do_arquivo”**.
+
+### 12. Git stash
+
+O “git stash” **salva temporariamente as mudanças que ainda não foram** **comitadas**, o que permite que você trabalhe em outra coisa e depois retome as alterações salvas.
+
+Para usar o comando, há duas formas:
+
+- - Seu uso básico com **“git stash”**;
+  - Para restaurar mudanças stashed, use **“git stash apply”**.
+
+### 13. Git reset
+
+O comando “git reset” é usado para **desfazer commits**. A depender das opções usadas, ele pode redefinir o índice e o diretório de trabalho para corresponder ao convite especificado.
+
+Também há duas formas de fazer esse comando:
+
+- - Se você quer #undo o último convite, mas quer manter as mudanças, use **“git reset –soft HEAD~1”**;
+  - Para desfazer commit, bem como as alterações no índice diretório de trabalho, o comando é **“git reset –hard HEAD~1”**.
+
+### 14. Git revert
+
+Já o “git revert” **cria um novo commit que desfaz as mudanças introduzidas por um commit anterior**, mas sem alterar o histórico do repositório.
+
+Utilize-o com **“git revert** **commit_id****”**.
+
+### 15. Git help
+
+**Fornece ajuda para qualquer outro comando Git**, sendo útil para consultar a síntese e as opções disponíveis para uma determinada instrução.
+
+Para usá-lo, digite **“git help** **nome_do_comando****”**.
+
+### 16. Git diff
+
+O comando “git diff” **mostra a diferença entre commits, branches ou do diretório de trabalho atual e o índice**. Essa é uma ferramenta poderosa para revisar o que mudou em arquivos específicos ou em todo o seu repositório.
+
+Ele pode ser usado de duas formas:
+
+- - Para visualizar as diferenças entre diretório de trabalho e índice, use **“git diff”**;
+  - Para ver as diferenças entre comics, você deve digitar **“git diff** **commit1** **commit2****“**.
+
+### 17. Git mv
+
+**Move ou renomeia um arquivo no repositório.** A recomendação é usá-lo, em vez de comandos de sistema como “mv”, pois garante que o Git rastreie a mudança.
+
+Para utilizá-lo, use o **“git mv** **nome_antigo nome_novo****”**.
+
+### 18. Git mergetool
+
+O comando “git mergetool” **ajuda a resolver conflitos de** **merge** com ferramentas de terceiros para comparação e mesclagem de arquivos.
+
+Use a instrução pelo **“git mergetool”**.
+
+Esse comando também é útil para lidar com um grande número de alterações e serve para contrapor mudanças específicas. Dessa forma, você consegue comparar e revisar essas modificações em um contexto visual, além de garantir que todas as mudanças estejam integradas corretamente.
+
+### 19. Git log
+
+O “git log” **exib****e o histórico de commits de um repositório** e mostra informações como autor, data e a mensagem de commit.
+
+Há algumas formas de utilizar o Git log:
+
+- - Seu uso básico é pelo **“git log”**;
+  - Para uma visualização compacta de commits, você deve digitar **“git log –oneline”**;
+  - Para ver um log com gráfico de branches, o comando a ser utilizado é **“git log –graph —****oneline****“**.
+
+### 20. Git branch
+
+Com ele, você consegue **listar, gerenciar ou criar branches**.
+
+Há diferentes variações deste comando:
+
+- - Para a listagem dos branches, use **“git branch”**;
+  - Para criar uma nova ramificação, você deve digitar **“git branch nome_da_branch”**;
+  - Para deletar uma branch, utilize **“git branch** **nome_da_branch****“**.
+
+Mas, o que é branch? Esse é um recurso presente no kit que permite criar ramificações no histórico de um código. Dessa forma, cada branch consegue ter o seu próprio conjunto de alterações e permite que pessoas diferentes trabalhem em diversas funcionalidades ou correções de maneira simultânea.
+
+### 21. Git fetch
+
+O “git fetch” **baixa objetos referenciais de um repositório remoto**, mas não os mescla com as alterações do código local. Esse é um comando útil para quem quer atualizar o seu banco de dados local com as últimas mudanças sem afetar o seu trabalho atual.
+
+Utilize-o pelo **“git fetch origin”**.
+
+Antes de entregar mudanças remotas ao seu branch local, você também pode usar esse comando para baixar as atualizações e depois revisar as alterações com o “git log” ou “git diff”.
+
+Dessa forma, você consegue inspecionar o que foi alterado antes de decidir como incorporar essas mudanças.
+
+### 22. Git rebase
+
+**Reaplica a commit de uma branch sobre outra**, usado para manter um histórico de registros mais linear e limpo, além de evitar merges excessivos.
+
+Digite o comando **“git rebase** **nome_da_branch****”** para utilizá-lo.
+
+Também é possível usar essa instrução quando você trabalha uma funcionalidade e deseja manter a sua ramificação sempre sincronizada com a principal, já que ele ajuda a incorporar as mudanças mais recentes sem criar merge commit adicional.
